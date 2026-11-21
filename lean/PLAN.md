@@ -37,7 +37,7 @@ LR check); no warnings (all files are Lean modules since 2026-10-24).
 
 ## Remaining work
 
-None. When the library repository is made public, change the dependency URL to HTTPS (see "Split").
+None.
 
 ## Deferred (possible later work)
 
@@ -116,16 +116,16 @@ need only a new example.
 ## Split: library + book (done 2026-10-24)
 
 * The library `RadiiPolynomial` is its own Lean project and repository
-  (github.com/marciogameiro/RadiiPolynomial, branch `master`; private for now).
+  (github.com/marciogameiro/RadiiPolynomial, branch `master`; public).
 * The book's proofs are the Lean project `lean/` in the book repository `LeanearizedODEs`, with
-  `require RadiiPolynomial` as a git dependency (`git@github.com:marciogameiro/RadiiPolynomial.git`,
+  `require RadiiPolynomial` as a git dependency (`https://github.com/marciogameiro/RadiiPolynomial`,
   `rev = "master"`; the commit is pinned in `lake-manifest.json`, Mathlib is inherited from the
   library) (2026-10-25). Before that, a path dependency on the sibling checkout with a shared
   `packagesDir`.
 * A library change reaches the book project after it is pushed and `lake update RadiiPolynomial` is run
   in `lean/` (this also fetches the Mathlib cache).
-* The SSH URL works only with access to the private repository; when the library is made public,
-  change it to `https://github.com/marciogameiro/RadiiPolynomial` and run `lake update RadiiPolynomial`.
+* The dependency uses the HTTPS URL (2026-11-20), so the library can be fetched without a GitHub
+  account; it was an SSH URL while the library was private.
 * Rules: the library never refers to the book; example-specific helpers stay in the book project;
   certificate conventions and generators live with the book (`lean/scripts/`).
 

@@ -8,7 +8,7 @@ relaxedAutoImplicit = false
 
 [[require]]
 name = "RadiiPolynomial"
-git = "git@github.com:marciogameiro/RadiiPolynomial.git"
+git = "https://github.com/marciogameiro/RadiiPolynomial"
 rev = "master"
 
 [[lean_lib]]
