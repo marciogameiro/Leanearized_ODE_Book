@@ -1,0 +1,20 @@
+{
+ "example": "Chapter 2, Example ex:equilibria_Lorenz (equilibrium of the Lorenz system)",
+ "theorem": "th:radiiFiniteDim with Lemma lem:existenceinterval",
+ "problem": "f(x) = (sigma (x2 - x1), rho x1 - x2 - x1 x3, -beta x3 + x1 x2)",
+ "parameters": {
+  "sigma": 10,
+  "rho": 28,
+  "beta": "8/3"
+ },
+ "norm": "sup norm on R^3, induced operator norm (maximal absolute row sum)",
+ "radii_polynomial": "p(r) = Z2 r^2 - (1 - Z0) r + Y0, r_* = infinity; p(r0) < 0 and p(r1) < 0",
+ "xbar": [8.4853, 8.4853, 27],
+ "A": [
+  [-0.051851843722001, -0.018518437220007, 0.058925435753597],
+  [0.048148156277999, -0.018518437220007, 0.058925435753597],
+  [-0.011785087150719, -0.117850871507195, 0]
+ ],
+ "r0": 1.8626e-05,
+ "r1": 4.2426
+}

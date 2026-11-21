@@ -1,0 +1,33 @@
+{
+ "example": "Chapter 2, Example ex:2d_example (intersection of two parabolas)",
+ "theorem": "th:radiiFiniteDim with Lemma lem:existenceinterval",
+ "problem": "f(x) = (4 x1^2 + x2 - lambda, x1 + x2^2 - 1)",
+ "parameters": {
+  "lambda": 3
+ },
+ "norm": "sup norm on R^2, induced operator norm (maximal absolute row sum)",
+ "A": "not stored: A = Df(xbar)^{-1}, computed exactly from xbar",
+ "radii_polynomial": "p(r) = Z2 r^2 - (1 - Z0) r + Y0, r_* = infinity; p(r0) < 0 and p(r1) < 0",
+ "solutions": [
+  {
+   "xbar": [-0.6545436118927946, 1.286290640521338],
+   "r0": 3e-16,
+   "r1": 0.64
+  },
+  {
+   "xbar": [0.7986333753610425, 0.4487389270377125],
+   "r0": 6e-16,
+   "r1": 0.227
+  },
+  {
+   "xbar": [0.9086121587039679, -0.3023042197787387],
+   "r0": 1.7e-16,
+   "r1": 0.239
+  },
+  {
+   "xbar": [-1.052701922172216, -1.432725347780312],
+   "r0": 2.2e-16,
+   "r1": 0.927
+  }
+ ]
+}

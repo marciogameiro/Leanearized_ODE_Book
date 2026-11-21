@@ -1,0 +1,15 @@
+name = "LeanearizedODEs"
+version = "0.1.0"
+defaultTargets = ["LeanearizedODEs"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "RadiiPolynomial"
+git = "git@github.com:marciogameiro/RadiiPolynomial.git"
+rev = "master"
+
+[[lean_lib]]
+name = "LeanearizedODEs"
